@@ -47,7 +47,14 @@ class ListPage extends StatelessWidget {
               ),
             ),
             SizedBox(height: 30),
-            Text('Valor total dos itens do pedido: R\$ ${totalPedido.toStringAsFixed(2)}'),
+            Text(
+              'Valor total: R\$ ${totalPedido.toStringAsFixed(2)}',
+              style: TextStyle(
+                fontSize: 28, // Tamanho da fonte
+                fontWeight: FontWeight.bold, // Negrito
+                color: Colors.blue, // Cor do texto
+              ),
+            ),
           ],
         ),
       ),
